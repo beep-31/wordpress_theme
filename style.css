@@ -148,3 +148,159 @@ main{
     height: 48px;
     width: 100%;
 }
+
+/* sections  */
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section .heading,
+a .title{
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: all .4s;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 4px 32px;
+    display: inline-block;
+    color: black;
+    margin: 12px 0px;
+}
+
+section .heading:hover,
+a .title:hover{
+    padding: 4px 48px;
+    background-color: red;
+    color: black;
+}
+
+section p{
+    text-align: center;
+    padding: 8px;
+}
+
+.section-source a{
+    margin: 8px;
+    text-align: center;
+}
+
+/* cards  */
+
+.card-image{
+    transition: 0.4s;
+    margin-bottom: 18px;
+}
+
+.card-image:hover{
+    box-shadow: 0 18px 6px -6px #777;
+}
+
+.card .card-description{
+    padding: 0 8px;
+}
+
+.btn-read-more{
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+}
+
+.btn-read-more:hover{
+    text-decoration: none;
+    padding: 8px 48px;
+    color: white;
+    background-color: red;
+}
+
+footer{
+    background: black;
+    padding: 8px;
+    color: #eee;
+    display: flex;
+}
+
+footer a{
+    color: white;
+}
+
+footer .left-side{
+    border-right: 1px solid white;
+    padding-left: 32px;
+    width: 50%;
+}
+
+footer .left-side ul{
+    padding: 0;
+    line-height: 1.5;
+}
+
+footer .right-side{
+    text-align: center;
+    padding: 8px;
+    width: 50%;
+}
+
+footer .right-side p{
+    text-align: center;
+}
+
+footer .right-side p > span{
+    background-color: #777;
+    color: black;
+    padding: 4px 4px;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+footer .right-side p > span:hover{
+    background-color: #fc5c648f;
+    color: white;
+}
+
+footer .right-side svg{
+    width: 50px;
+    height: 50px;
+    margin: 0px 15px;
+}
+
+footer .right-side .social-media ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0px;
+}
+
+/* Media  */
+
+@media (min-width:720px){
+    main{
+        width: 95%;
+    }
+    .card{
+        width: 45%;
+    }
+
+    .card .card-image a img{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        max-height: 340px;
+        min-height: 340px;
+    }
+}
+
+@media(min-width:1200px){
+    main{
+        width: 85%;
+    }
+}
