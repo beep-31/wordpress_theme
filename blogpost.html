@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordpress Theme</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./blog.css">
 </head>
 
 <!-- svg settings -->
@@ -81,7 +81,7 @@
             <div class="item"></div>
         </div>
         <ul>
-            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="blogs.html" class="nav-link">Blog</a></li>
             <li><a href="projects.html" class="nav-link">Projects</a></li>
             <li><a href="about.html" class="nav-link">About</a></li>
@@ -99,98 +99,47 @@
         <input type="text" placeholder="Search Here">
     </div>
 
-    <!-- intro -->
-    <div class="banner">
-        <h1>&lt;CodeCamp/&gt;</h1>
-        <h3>Blog about web development</h3>
-    </div>
-
-    <main>
-        <a href="blogs.html">
-            <h2 class="title">All blogs</h2>
-        </a>
-        <!-- blogs section  -->
-        <section>
-            <div class="card">
-                <div class="card-image">
-                    <a href="blogpost.html">
+    <main style="margin-bottom: 50px;">
+        <h2 class="title" style="margin-top: 100px;">Blog Post Title</h2>
+        <div id="post-container">
+            <section id="blogpost">
+                <div class="card">
+                    <div class="card-meta-blogpost">
+                        <p>Posted by Admin on 01/01/2020 in <a href="#">Web Dev</a></p>
+                    </div>
+                    <div class="card-image">
                         <img src="./img/1.jpg" alt="">
-                    </a>
+                    </div>
+                    <div class="card-description">
+                        <h3>The Introduction</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi facere dolor labore facilis? Saepe, vitae in! Modi quidem repellat sunt consequatur temporibus? 
+                            Corrupti minima debitis aut fugiat? Debitis neque veritatis ea quasi amet sint, nulla omnis perferendis quis officiis modi? Sunt quibusdam aspernatur totam fugiat 
+                            tempora necessitatibus dolores vitae molestiae!
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi facere dolor labore facilis? Saepe, vitae in! Modi quidem repellat sunt consequatur temporibus? 
+                            Corrupti minima debitis aut fugiat? Debitis neque veritatis ea quasi amet sint, nulla omnis perferendis quis officiis modi? Sunt quibusdam aspernatur totam fugiat 
+                            tempora necessitatibus dolores vitae molestiae!
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi facere dolor labore facilis? Saepe, vitae in! Modi quidem repellat sunt consequatur temporibus? 
+                            Corrupti minima debitis aut fugiat? Debitis neque veritatis ea quasi amet sint, nulla omnis perferendis quis officiis modi? Sunt quibusdam aspernatur totam fugiat 
+                            tempora necessitatibus dolores vitae molestiae!
+                        </p>
+                    </div>
                 </div>
-                <div class="card-description">
-                    <a href="blogpost.html">
-                        <h3>The Blog Title Here</h3>
-                    </a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque deleniti numquam autem possimus 
-                    corrupti veritatis expedita adipisci natus impedit totam! Nesciunt sequi corporis, necessitatibus aperiam officiis debitis perferendis dolores optio recusandae nisi unde laboriosam non quam exercitationem odit consequatur voluptates repellat, eos quidem! Harum placeat est adipisci accusantium dolor dolore.
-                    </p>
-                    <a href="blogpost.html" class="btn-read-more">Read More</a>
+                <div id="comments-section">
+                    Comments Section
                 </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-image">
-                    <a href="blogpost.html">
-                        <img src="./img/2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="card-description">
-                    <a href="blogpost.html">
-                        <h3>The Blog Title Here</h3>
-                    </a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque deleniti numquam autem possimus 
-                    corrupti veritatis expedita adipisci natus impedit totam! Nesciunt sequi corporis, necessitatibus aperiam officiis debitis perferendis dolores optio recusandae nisi unde laboriosam non quam exercitationem odit consequatur voluptates repellat, eos quidem! Harum placeat est adipisci accusantium dolor dolore.
-                    </p>
-                    <a href="blogpost.html" class="btn-read-more">Read More</a>
-                </div>
-            </div>
-        </section>
-
-        <a href="projects.html">
-            <h2 class="title">All Projects</h2>
-        </a>
-        <!-- projects section  -->
-        <section>
-            <div class="card">
-                <div class="card-image">
-                    <a href="projectpost.html">
-                        <img src="./img/3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="card-description">
-                    <a href="projectpost.html">
-                        <h3>The Project Title Here</h3>
-                    </a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque deleniti numquam autem possimus 
-                    corrupti veritatis expedita adipisci natus impedit totam! Nesciunt sequi corporis, necessitatibus aperiam officiis debitis perferendis dolores optio recusandae nisi unde laboriosam non quam exercitationem odit consequatur voluptates repellat, eos quidem! Harum placeat est adipisci accusantium dolor dolore.
-                    </p>
-                    <a href="projectpost.html" class="btn-read-more">Read More</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <a href="projectpost.html">
-                        <img src="./img/4.jpg" alt="">
-                    </a>
-                </div>
-                <div class="card-description">
-                    <a href="projectpost.html">
-                        <h3>The Project Title Here</h3>
-                    </a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque deleniti numquam autem possimus 
-                    corrupti veritatis expedita adipisci natus impedit totam! Nesciunt sequi corporis, necessitatibus aperiam officiis debitis perferendis dolores optio recusandae nisi unde laboriosam non quam exercitationem odit consequatur voluptates repellat, eos quidem! Harum placeat est adipisci accusantium dolor dolore.
-                    </p>
-                    <a href="projectpost.html" class="btn-read-more">Read More</a>
-                </div>
-            </div>
-        </section>
-
-        <div class="source-code">
-            <h2 class="title">Source Code</h2>
-            <div class="section-source">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora veritatis eius error, delectus illo laudantium possimus debitis fuga natus incidunt, quidem totam? Nisi, sed doloremque, rerum eius possimus repellendus, omnis incidunt tenetur ipsam sunt quas? Reprehenderit in possimus quibusdam!</p>
-                <a href="https://github.com/beep-31" class="btn-read-more">Github Profile</a>
-            </div>
+            </section>
+            <aside id="sidebar">
+                <h3>Top Categories</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Gaming</li>
+                    <li>Ethical Hacking</li>
+                    <li>Crazy Brazy</li>
+                    <li>Lol You Lazy</li>
+                </ul>
+            </aside>
         </div>
     </main>
 
