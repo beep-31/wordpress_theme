@@ -59,7 +59,7 @@
 
 <body>
     <!-- header for mobile devices -->
-    <div id="slideout-menu">
+    <div id="slideout-menu" class="slideout">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Blog</a></li>
@@ -67,12 +67,6 @@
             <li><a href="#">About</a></li>
             <li>
                 <input type="text" placeholder="Search here...">
-                <br>
-                <div id="search-icon">
-                    <svg>
-                        <use xlink:href="#search">
-                    </svg>
-                </div>
             </li>
         </ul>
     </div>
@@ -83,7 +77,9 @@
                 &lt;CodeCamp/&gt;
             </a>
         </div>
-        <div class="burger"></div>
+        <div class="burger">
+            <div class="item"></div>
+        </div>
         <ul>
             <li><a href="#" class="nav-link active">Home</a></li>
             <li><a href="#" class="nav-link">Blog</a></li>
@@ -188,13 +184,13 @@
             </div>
         </section>
 
-        <section class="source-code">
-            <h2 class="heading">Source Code</h2>
+        <div class="source-code">
+            <h2 class="title">Source Code</h2>
             <div class="section-source">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora veritatis eius error, delectus illo laudantium possimus debitis fuga natus incidunt, quidem totam? Nisi, sed doloremque, rerum eius possimus repellendus, omnis incidunt tenetur ipsam sunt quas? Reprehenderit in possimus quibusdam!</p>
                 <a href="#" class="btn-read-more">Github Profile</a>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
